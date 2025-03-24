@@ -1,0 +1,29 @@
+img {
+    width: 300px;
+    border-radius: 50px;
+    margin-left: 40px;
+}
+header {
+    background-color: beige;
+    border: 2px solid black;
+    width: 300px;
+}
+
+nav {
+    background-color: rgb(253, 160, 160);
+    span {
+        border: 2px solid black;
+    }
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    background-color: blanchedalmond;
+
+
+}
+
+.about {
+    background-color:cadetblue;
+}

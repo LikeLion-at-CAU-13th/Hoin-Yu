@@ -6,7 +6,7 @@ class Complete {
         this.row = new Div('', 'complete-row').node;
 
         this.innerText = new Div(todoText, 'complete-text-box');
-        this.delBtn = new Button('삭제', 'complete-del-btn');
+        this.delBtn = new Button('./assets/delete.png', 'del-btn', '삭제');
     }
 
     addRow() {

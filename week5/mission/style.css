@@ -81,6 +81,13 @@ padding-right: 10px;
 padding-left: 10px;
 }
 
+button img.icon {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+
 #input-button{
 background-color: #4d81b1;
 color: white;

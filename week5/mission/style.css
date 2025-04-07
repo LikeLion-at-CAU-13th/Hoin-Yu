@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+    height: 90vh;
+    font-family: sans-serif;
+}
+
+main{
+display: flex;
+width: 90%;
+justify-content: space-between;
+}
+
+article{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 40%;
+height: 90%;
+margin-top: 30px;
+border: 1px solid #c7e4ff;
+border-radius: 10px;
+overflow-y: scroll;
+}
+
+.title{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+font-size: 25px;
+font-weight: bold;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.to-do{
+justify-content: center;
+height: 20%;
+min-height: 150px;
+background-color: #91c2ef;
+gap: 20px;
+}
+
+.complete{
+justify-content: center;
+height: 15%;
+min-height: 80px;
+background-color: #efdf91;
+}
+
+#input-box{
+display: flex;
+width: 80%;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+background-color: whitesmoke;
+padding: 5px;
+}
+
+input{
+width: 85%;
+border: none;
+background-color: transparent;
+outline: none;
+}
+
+button{
+display: flex;
+width: fit-content;
+height: fit-content;
+border: none;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-right: 10px;
+padding-left: 10px;
+}
+
+#input-button{
+background-color: #4d81b1;
+color: white;
+font-size: 15px;
+}
+
+#input-button:hover{
+cursor: pointer;
+background-color: #c4e2ff;
+}
+
+@media all and (max-width:970px){
+main{
+    flex-direction: column;
+    align-items: center;
+}
+article{
+    width: 90%;
+}
+}
+
+
+
+
+
+.row{
+display: flex;
+width: 90%;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #c7e4ff;
+}
+.text-box{
+width: 70%;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.complete-btn{
+color: white;
+background-color: #4d81b1;
+}
+.complete-btn:hover{
+cursor: pointer;
+background-color: #c4e2ff;
+}
+
+.del-btn{
+color: white;
+background-color: #5e5e5e;
+}
+.del-btn:hover{
+cursor: pointer;
+background-color: #e20000;
+}
+
+.done-text{
+text-decoration: line-through;
+color: #808080;
+}
+
+.done-btn{
+background-color: #5e5e5e;
+}

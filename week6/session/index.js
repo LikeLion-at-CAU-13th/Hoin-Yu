@@ -1,6 +1,6 @@
-import showDetail from "./showDetail.js"
+import { showDetail } from "./showDetail.js";
 
-const baseURL ="http://apis.data.go.kr/B551011/PhotoGalleryService1"
+const baseURL = "http://apis.data.go.kr/B551011/PhotoGalleryService1";
 
 const option = {
     serviceKey:
@@ -10,7 +10,7 @@ const option = {
     MobileOS: "ETC",
     arrange: "A",
     _type: "json",
-  };
+};
 
 const container = document.getElementById('container');
 const detailSection = document.createElement('div');
@@ -26,29 +26,25 @@ function getRandomNumber() {
 let count = getRandomNumber();
 
 async function getData() {
- const url = `${baseURL}/galleryList1?numOfRows=${option.numofRows}&MobileApp=${option.MobileApp}&MobileOS=${option.MobileOS}&arrange=${option.arrange}&_type=${option._type}&pageNo=${count}&serviceKey=${option.serviceKey}`
+ const url = `${baseURL}/galleryList1?numOfRows=${option.numofRows}&MobileApp=${option.MobileApp}&MobileOS=${option.MobileOS}&arrange=${option.arrange}&_type=${option._type}&pageNo=${count}&serviceKey=${option.serviceKey}`;
 
  const fetchData = await fetch(url);
-//  console.log(fetchData)
-
  const toJson = await fetchData.json();
-//  console.log(toJson);
-
  const data = await toJson.response.body.items.item;
  console.log(data);
 
- data.map((data,i)=>{
+ data.map((item, i) => {
     const list = document.createElement('div');
     list.id = 'list';
 
     const image = document.createElement('img');
-    image.src = data.galWebImageUrl;
+    image.src = item.galWebImageUrl;
 
     const info = document.createElement('span');
-    info.innerText=`
+    info.innerText = `
     ${i+1}번째 사진
-    제목 : ${data.galTitle}
-    장소 : ${data.galPhotographyLocation}
+    제목 : ${item.galTitle}
+    장소 : ${item.galPhotographyLocation}
     `;
 
     list.appendChild(image);
@@ -56,15 +52,15 @@ async function getData() {
 
     container.appendChild(list);
 
-    const button = document.createElement('button')
-    button.innerText = "더보기"
+    const button = document.createElement('button');
+    button.innerText = "더보기";
 
     button.addEventListener('click', () => {
-      showDetail(data);
-  });
+      showDetail(item, container, detailSection);
+    });
 
     list.appendChild(button);
- })
+ });
 }
 
 

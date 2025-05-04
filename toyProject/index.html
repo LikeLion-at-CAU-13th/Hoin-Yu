@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방명록</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>방명록</h1>
+        
+        <!-- 방명록 작성 폼 -->
+        <div class="guestbook-form">
+            <h2>새 글 작성</h2>
+            <form id="guestbookForm">
+                <div class="form-group">
+                    <label for="title">제목</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="author">작성자</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="content">내용</label>
+                    <textarea id="content" name="content" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" required>
+                    <small>* 글 수정/삭제 시 필요합니다</small>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit">등록하기</button>
+                    <button type="reset">초기화</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- 방명록 목록 -->
+        <div class="guestbook-list">
+            <h2>방명록 목록</h2>
+            <div id="guestbookEntries">
+                <!-- 방명록 항목들이 여기에 표시됩니다 -->
+            </div>
+        </div>
+        
+        <!-- 비밀번호 확인 모달 -->
+        <div id="passwordModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>비밀번호 확인</h3>
+                <p>이 글을 수정하거나 삭제하려면 비밀번호를 입력하세요.</p>
+                <input type="password" id="confirmPassword">
+                <div class="modal-buttons">
+                    <button id="confirmDelete">삭제</button>
+                    <button id="confirmEdit">수정</button>
+                    <button id="cancelModal">취소</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 수정 모달 -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close edit-close">&times;</span>
+                <h3>글 수정</h3>
+                <form id="editForm">
+                    <div class="form-group">
+                        <label for="editTitle">제목</label>
+                        <input type="text" id="editTitle" name="editTitle" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="editAuthor">작성자</label>
+                        <input type="text" id="editAuthor" name="editAuthor" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="editContent">내용</label>
+                        <textarea id="editContent" name="editContent" rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="submit">수정완료</button>
+                        <button type="button" id="cancelEdit">취소</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="guestbook.js"></script>
+</body>
+</html>

@@ -47,6 +47,8 @@
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   background-color: white;
+    margin-top: 40px;
+
 }
 
 .nav-tabs a {
@@ -96,7 +98,7 @@
 
 
 .more-text {
-  color: blue;
+  color: Black;
   cursor: pointer;
   margin-left: 8px;
   font-weight: 500;
@@ -135,4 +137,44 @@
   background: none;
   font-size: 1.2rem;
   cursor: pointer;
+}
+
+
+/* 구독 가입 버튼 */
+.channel-details {
+  font-family: Arial, sans-serif;
+}
+
+.more-text {
+  cursor: pointer;
+  color: #555;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.join-button {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.join-button:hover {
+  background-color: #eee;
 }

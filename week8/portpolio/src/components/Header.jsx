@@ -20,14 +20,19 @@ function Header() {
           className="search-input"
         />
       </div>
-
+      <div className="banner">
       {/* 배너 이미지 */}
       <img
         src={bannerImg}
         alt="Banner"
         className="banner"
+        style = {{
+          width: '100%',
+          maxWidth: '1000px',
+          height: 'auto',
+        }}
       />
-
+      </div>
       {/* 프로필 + 소개 영역 */}
       <div className="channel-info">
         <img
@@ -39,10 +44,14 @@ function Header() {
         <div className="channel-details">
           <h1>Hoin의 포트폴리오</h1>
           <p>@Hoin의포트폴리오 • 구독자 40명</p>
-          <p>React, TypeScript, UX에 진심입니다.{" "}
+          <p>React, JavaScript를 배우는 중입니다.{" "}
             <span className="more-text" onClick={openModal}>
               ...더보기
             </span></p>
+            <div className="button-group">
+        <button className="subscribe-button">구독</button>
+        <button className="join-button">가입</button>
+      </div>
         </div>
       </div>
 

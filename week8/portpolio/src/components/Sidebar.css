@@ -1,0 +1,28 @@
+.sidebar {
+  position: fixed;
+  top: 60px; /* 검색창 높이 감안 */
+  left: 0;
+  width: 120px;
+  height: 100%;
+  background-color: white;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-item {
+  padding: 16px 0;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}

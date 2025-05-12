@@ -1,0 +1,19 @@
+.app-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.main-content {
+  margin-left: 400px; /* sidebar 너비만큼 띄움 */
+  width: calc(100% - 200px);
+}

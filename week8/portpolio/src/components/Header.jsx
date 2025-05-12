@@ -12,7 +12,7 @@ function Header() {
   const closeModal = () => setShowModal(false);
   return (
     <div className="header">
-      {/* 🔍 상단 검색 바 */}
+      {/*  상단 검색 바 */}
       <div className="top-search-bar">
         <input
           type="text"

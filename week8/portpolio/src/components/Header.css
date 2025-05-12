@@ -71,14 +71,13 @@
   background-color: white;
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .search-input {
-  width: 400px;
+  width: 35%;
   padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 20px;

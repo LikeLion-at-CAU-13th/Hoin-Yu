@@ -19,6 +19,9 @@ function About() {
       <a href="https://github.com/hoinhoin">https://github.com/hoinhoin</a>
       <p>Blog</p>
       <a href="https://velog.io/@dolceeee00/posts">https://velog.io/@dolceeee00/posts</a>
+      <p>Instagram</p>
+      <a href="https://www.instagram.com/ho1n_ryu/">https://www.instagram.com/ho1n_ryu/</a>
+
       <h3>기술 스택</h3>
       <ul>
         <li>React</li>

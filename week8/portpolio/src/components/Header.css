@@ -1,0 +1,180 @@
+.header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+
+.banner {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.channel-info {
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+  padding: 0 2rem;
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-color: white;
+  object-fit: cover;
+}
+
+.channel-details {
+  margin-left: 1.5rem;
+}
+
+.channel-details h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.channel-details p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem 2rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+    margin-top: 40px;
+
+}
+
+.nav-tabs a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 0.3rem;
+}
+
+.nav-tabs a:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+
+
+/* 검색창 */
+
+.top-search-bar {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.search-input {
+  width: 35%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-top: 10px;
+}
+
+
+
+
+.more-text {
+  color: Black;
+  cursor: pointer;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/* 모달 전체 배경 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* 모달 내용 박스 */
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 닫기 버튼 */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+/* 구독 가입 버튼 */
+.channel-details {
+  font-family: Arial, sans-serif;
+}
+
+.more-text {
+  cursor: pointer;
+  color: #555;
+}
+
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.join-button {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.join-button:hover {
+  background-color: #eee;
+}
